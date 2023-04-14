@@ -12,7 +12,7 @@ type Cache struct {
 	ttl        int
 }
 
-type inMemCacheConfig struct {
+type InMemCacheConfig struct {
 	Shards             int
 	LifeWindow         time.Duration
 	CleanWindow        time.Duration
@@ -25,7 +25,7 @@ type inMemCacheConfig struct {
 	RemoveTtl          int
 }
 
-func (c *Cache) Init(conf *inMemCacheConfig) {
+func (c *Cache) Init(conf *InMemCacheConfig) {
 
 	config := bigcache.Config{
 		Shards:             conf.Shards,
