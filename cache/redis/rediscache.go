@@ -19,7 +19,7 @@ type Cache struct {
 	ttl   int64
 }
 
-func (c *Cache) Init(conf *redisCacheConfig) {
+func (c *Cache) Init(conf *RedisCacheConfig) {
 
 	c.redis = redis.NewClient(&redis.Options{
 		Addr:     conf.ADDRESS,
