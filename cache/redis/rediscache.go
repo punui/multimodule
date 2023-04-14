@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-type redisCacheConfig struct {
+type RedisCacheConfig struct {
 	ADDRESS   string `mapstructure:"CLUSTER_ADDRESS"`
 	PASSWORD  string `mapstructure:"CLUSTER_PASSWORD"`
 	UseSSL    bool   `mapstructure:"CLUSTER_USE_SSL"`
